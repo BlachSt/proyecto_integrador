@@ -1,0 +1,12 @@
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="productos.jsp">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="productos.jsp">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="productos2.jsp">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>

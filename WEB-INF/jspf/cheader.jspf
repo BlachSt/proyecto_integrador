@@ -1,0 +1,12 @@
+<header>
+    
+    <h1>Spartan Gym</h1>
+    
+    <div class="botones">
+       
+      <a href="login.jsp" class="btn btn-secondary" role="button" aria-pressed="true"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a>  
+      <a href="registro.jsp" class="btn btn-secondary" role="button" aria-pressed="true"><i class="fas fa-user-plus"></i>&nbsp;Registro</a>
+     
+    </div>
+    
+</header>

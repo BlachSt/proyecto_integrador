@@ -1,0 +1,247 @@
+<%@page import="controllers.ControladorProducto"%>
+<%
+  ControladorProducto cp= new ControladorProducto();
+%>
+<!DOCTYPE html>
+
+<html lang="en">
+   
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Shop | E-Shopper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body >
+	
+    <section id="advertisement" style="background-color: #004085;">
+        <div class="container" style="color: white; text-align: center; padding: 30px;">
+                     ¡ HOY UN 3% DE DESCUENTO ADICIONAL POR SUS COMPRAS <br>ONLINE CON CUALQUIER MEDIO DE PAGO !
+			
+		</div>
+	</section>
+	
+	<section class="center-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 center-block">
+					<div class="features_items"><!--features_items-->
+						<h2 class="title text-center" style="color: #00abf0; font-size: 25px">Planes Spartan</h2>
+					</div> 
+				</div>
+			</div>
+                    <div class="row"> 
+                    <div class="card center-block" style="width: 40rem;">
+                         <div class="card-body">
+                             <h5 class="card-title title text-center" style="font-size: 38px"><b>CLASSIC SPARTAN</b></h5>
+                             <br>
+                             <p  style="font-size: 20px" class="title text-center">Paquete para aquellos que apenas van empezando</p>
+                             <br>
+                             <p class="title text-center" style="font-size: 50px"><b><sup>S/</sup>39.90</b></p>
+                             <br>
+                             <br>
+                              <p  style="font-size: 20px" class="title text-center">Inscripción: Varía según la unidad</p>
+                              <p  style="font-size: 20px" class="title text-center">Mantenimiento: S/ 19,90</p>
+                              <p  style="font-size: 20px" class="title text-center">Sin multa por cancelamiento</p>
+                              <br>
+                             <br>
+                             
+                             
+                              
+                              
+                              <!-- Button trigger modal -->
+                   <a type="button" style="background-color: #00abf0; color: #FFFFFF" class="btn btn-primary center-block" data-toggle="modal" data-target="#staticBackdrop">
+                               INFORMACIÓN
+                   </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel"><b>BENEFICIOS INCLUIDOS</b></h5>
+        
+                            </div>
+                            <div class="modal-body">
+        
+      
+      <b>Spartan Fit GO</b>
+        <br>
+ <br>-Área de peso libre, peso integrado, cardio y clases grupales
+ <br>-Acceso a todas las áreas del gimnasio
+ <br>-Sin cargo de cancelación
+ <br>
+<br><b>SERVICIOS</b>
+<br>
+ <br>-Vestidores
+ <br>-Lockers
+                            </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <p  style="font-size: 10px" class="title text-center">Leer condiciones de servicio</p> 
+                         </div>
+                    </div>
+                    
+                    
+                    <div class="card center-block" style="width: 40rem;">
+                         <div class="card-body">
+                             <h5 class="card-title title text-center" style="font-size: 38px"><b>SUPER SPARTAN</b></h5>
+                             <br>
+                             <p  style="font-size: 20px" class="title text-center">Entrena con el más alto rendimiento para obtener grandes resultados</p>
+                             <br>
+                             <p class="title text-center" style="font-size: 50px"><b><sup>S/</sup>59.90</b></p>
+                             <br>
+                             <br>
+                              <p  style="font-size: 20px" class="title text-center">Inscripción: Varía según la unidad</p>
+                              <p  style="font-size: 20px" class="title text-center">Mantenimiento: S/ 19,90</p>
+                              <p  style="font-size: 20px" class="title text-center">Sin multa por cancelamiento</p>
+                              <br>
+                             <br>
+                             
+                             
+                              
+                              
+                              <!-- Button trigger modal -->
+                   <a type="button" style="background-color: #00abf0; color: #FFFFFF" class="btn btn-primary center-block" data-toggle="modal" data-target="#staticBackdrop2">
+                               INFORMACIÓN
+                   </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                               <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        
+                            </div>
+                            <div class="modal-body">
+        <b>Spartan Fit GO</b>
+        <br>
+ <br>-Área de peso libre, peso integrado, cardio y clases grupales
+ <br>-Acceso a todas las áreas del gimnasio
+ <br>-Invitar a un amigo a entrenar hasta 5 veces al mes
+ <br>-Sillones de masaje
+ <br>
+<br><b>SERVICIOS</b>
+<br>
+ <br>-Vestidores
+ <br>-Lockers
+                            </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <p  style="font-size: 10px" class="title text-center">Leer condiciones de servicio</p>
+                         </div>
+                    </div>    
+                        
+                        
+                        
+                    <div class="card center-block" style="width: 40rem;">
+                         <div class="card-body">
+                             <h5 class="card-title title text-center" style="font-size: 38px"><b>MEGA SPARTAN</b></h5>
+                             <br>
+                             <p  style="font-size: 20px" class="title text-center">Entrena a un nivel superior para obtener mejores resultados</p>
+                             <br>
+                             <p class="title text-center" style="font-size: 50px"><b><sup>S/</sup>79.90</b></p>
+                             <br>
+                             <br>
+                              <p  style="font-size: 20px" class="title text-center">Inscripción: Varía según la unidad</p>
+                              <p  style="font-size: 20px" class="title text-center">Mantenimiento: S/ 19,90</p>
+                              <p  style="font-size: 20px" class="title text-center">Sin multa por cancelamiento</p>
+                              <br>
+                             <br>
+                             
+                             
+                              
+                              
+                              <!-- Button trigger modal -->
+                   <a type="button" style="background-color: #00abf0; color: #FFFFFF" class="btn btn-primary center-block" data-toggle="modal" data-target="#staticBackdrop3">
+                               INFORMACIÓN
+                   </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                               <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        
+                            </div>
+                            <div class="modal-body">
+       <b>Spartan Fit GO</b>
+        <br>
+ <br>-Área de peso libre, peso integrado, cardio y clases grupales
+ <br>-Acceso a todas las áreas del gimnasio y centro de nutrición incluido
+ <br>-Invitar a un amigo a entrenar hasta 10 veces al mes
+ <br>-Sillones de masaje
+ <br>
+<br><b>SERVICIOS</b>
+<br>
+ <br>-Vestidores
+ <br>-Lockers
+                            </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <p  style="font-size: 10px" class="title text-center">Leer condiciones de servicio</p>
+                         </div>
+                    </div>    
+                        
+                        
+                        
+                    
+                    </div><!--cierre de row-->
+                    
+                    
+                    
+		</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+	</section>
+
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

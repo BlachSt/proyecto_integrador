@@ -1,0 +1,49 @@
+
+<aside>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="titulo">
+                <h1> MÁS NOVEDADES</h1>
+                <div class="subtitulo">
+                    <small>Descubre lo nuevo en nutrición y vida sana</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">    
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="RESOURCES/imgs/logos/novedad1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Trucos para seguir haciendo ejercicio en los meses de invierno</h5>
+                    <p class="card-text">Los expertos en nutrición y médicos consideran que para bajar de peso es necesario seguir una dieta balanceada y ejercitarse. Por ello, conviene dejar de lado la vida sedentaria, incluso con la llegada del invierno.</p>
+                    <a href="https://mag.elcomercio.pe/respuestas/trucos-caseros-para-seguir-haciendo-ejercicio-en-los-meses-de-invierno-remedios-hacks-nnda-nnni-noticia/" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="RESOURCES/imgs/logos/novedad2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">El estudio que asegura que hacer mucho ejercicio durante el fin de semana "es tan bueno como distribuirlo durante toda la semana"</h5>
+                    <p class="card-text">Investigadores estadounidenses analizaron los datos de más de 350.000 personas para ver qué tan bien les va a quienes son especialmente activos los fines de semana y que son conocidos en inglés como "weekend warriors" o guerreros de fin de semana.</p>
+                    <a href="https://www.bbc.com/mundo/noticias-62067159" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+        </div> 
+        <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="RESOURCES/imgs/logos/novedad3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Todo lo que debes y no debes hacer durante un entrenamiento con pesas</h5>
+                    <p class="card-text">Cuando practicamos cualquier deporte o realizamos cualquier entrenamiento, es necesario que las técnicas que llevamos a cabo sean las correctas para que se conviertan en eficaces.</p>
+                    <a href="https://www.mundodeportivo.com/vidae/ejercicio-fisico/20220707/1001833344/debes-hacer-no-debes-entrenamiento-pesas-act-pau.html" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+        </div> 
+    </div> 
+
+
+
+</aside>

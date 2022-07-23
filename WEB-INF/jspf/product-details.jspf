@@ -1,0 +1,195 @@
+<%@page import="controllers.ControladorProducto"%>
+<%@page import="clases.Producto"%>
+
+<%
+int id = Integer.parseInt(request.getParameter("id"));
+Producto producto = new controllers.ControladorProducto().getProducto(id);
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Product Details | E-Shopper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2 style="color: #00abf0;">PRODUCTOS</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											PC
+										</a>
+									</h4>
+								</div>
+								<div id="sportswear" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="">Asus </a></li>
+											<li><a href="">HP </a></li>
+											<li><a href="">LENOVO </a></li>
+											<li><a href="">TOSHIBA</a></li>
+											<li><a href="">DELL</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											LAP TOP
+										</a>
+									</h4>
+								</div>
+								<div id="mens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="">Asus </a></li>
+											<li><a href="">HP </a></li>
+											<li><a href="">LENOVO </a></li>
+											<li><a href="">TOSHIBA</a></li>
+											<li><a href="">DELL</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											Womens
+										</a>
+									</h4>
+								</div>
+								<div id="womens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="">Fendi</a></li>
+											<li><a href="">Guess</a></li>
+											<li><a href="">Valentino</a></li>
+											<li><a href="">Dior</a></li>
+											<li><a href="">Versace</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">TECLADO</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">MOUSE</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">MONITORES</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">IMPRESORAS</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">AUDIFONOS</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">SILLAS</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">ACCESORIOS</a></h4>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="col-sm-9 padding-right">
+					<div class="product-details"><!--product-details-->
+						<div class="col-sm-5">
+							<div class="view-product">
+								<img src="<%= producto.getImg()%>" alt="" />
+							</div>
+							
+
+						</div>
+						<div class="col-sm-7">
+							<div class="product-information"><!--/product-information-->
+								<img src="images/product-details/new.jpg" class="newarrival" alt="" />
+								<h2 style="color: #00abf0;"><%= producto.getNombre()%></h2>
+								<p style="color: #00abf0;">Web:<%= producto.getId()%></p>
+								
+                                                                <form action="agregarproducto" method="post">
+								<span>
+									<span style="color: #00abf0;">US $<%= producto.getPrecio()%></span>
+									<label>Quantity:</label>
+                                                                        <input type="hidden" value="<%= producto.getId()%>" name="idproducto">
+                                                                        <input type="text" value="1" id="txt-cantidad" name="cantidad"/>
+									<button type="submit" class="btn btn-fefault cart" style="background-color:#00abf0;">
+										<i class="fa fa-shopping-cart"></i>
+										Add to cart
+									</button>
+								</span>
+                                                                </form>
+								<p><b>Availability:</b> In Stock</p>
+								<p><b>Condition:</b> Nuevo</p>
+								<p><b>Brand:</b> E-SHOPPER</p>
+								<a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+							</div><!--/product-information-->
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
