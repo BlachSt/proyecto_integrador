@@ -13,11 +13,7 @@ public class ConexionBD {
     private static Connection con=null;
     
     //DEFINIR PARAMETROS DE INFORMACION DE LA BD
-    //private static final String URL="jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=cyberparts";
-    private static final String URL="jdbc:sqlserver://gianmarcoserverbd.database.windows.net\\MSSQLSERVER:1433;databaseName=cyberparts";    
-    private static final String DRIVER="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private static final String USER="gianmarcoadmin";
-    private static final String PASS="G123456789g!";
+  
     
     private static final String URLA="jdbc:mysql://localhost:3306/gimnasio_prueba";
     private static final String DRIVERA="com.mysql.cj.jdbc.Driver";
